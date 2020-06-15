@@ -63,7 +63,7 @@
                     <div class="col-md-4">
                         <div class="thumbnail">
                             <img class="group list-group-image" src="{{'/storage/'.$shows->image}}" alt="Card image cap">
-                            <span style="display:flex">
+                            <span style="display:flex; margin-top:-20px">
                                 <p style="background-color: #FE25FE;"><i class="fas fa-stopwatch">Còn {{$shows->numberPeople}} ngày nữa</i></p>
                                 <p style="background-color: gray;">{{$shows->typetour}}</p>
                             </span>

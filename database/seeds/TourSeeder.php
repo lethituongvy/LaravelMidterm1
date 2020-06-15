@@ -18,11 +18,11 @@ class TourSeeder extends Seeder
             DB::table('tours')->insert(
                 [
                     'name' => $faker->name,
-                    'image' => url('public/0Wd2hIstU6KvCOIQ1F9aCRdHYpTfNYqGvL9jbxuT.jpeg'),
+                    'image' => 'public/0Wd2hIstU6KvCOIQ1F9aCRdHYpTfNYqGvL9jbxuT.jpeg',
                     'typetour' => Str::random(10),
                     'schedule' => Str::random(10),
                     'depart' => $faker->numberBetween(1, 200),
-                    'numberPeople' => Str::random(10),
+                    'numberPeople' => $faker->numberBetween(1, 20),
                     'price' => $faker->numberBetween(150000, 2000000)
                 ]
             );
